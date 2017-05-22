@@ -1,3 +1,12 @@
-# First Chapter
+### HTML이란 무엇일까?
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+웹 사이트에서 사용할 문서는 웹에 맞는 형식인 \*.html\(또는 \*.htm\) 확장자를 쓴다.
+
+### HTML소스 엿보기
+
+### 웹 표준이란 무엇일까?
+
+### 왜 HTML5와 CSS3를 공부해야 할까?
+
+
+
