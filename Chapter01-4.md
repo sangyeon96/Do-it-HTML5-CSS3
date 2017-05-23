@@ -32,3 +32,5 @@
 
 이 책에서는 FileZilla라는 FTP 프로그램을 이용한다.
 
+닷홈의 무료 호스팅 서비스와 FileZilla를 이용하여 first.html파일 웹 서버에 올리기 완료.
+
