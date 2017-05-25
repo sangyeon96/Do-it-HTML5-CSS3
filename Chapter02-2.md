@@ -49,12 +49,78 @@
 ### &lt;span&gt; 태그 - 줄바꿈 없이 영역 묶기
 
 ```php
-<span></span>
+<span style="color:blue;">텍스트 단락에서 일부 글자만 파란색으로 바꿀 텍스트</span>
 ```
 
 ### &lt;ruby&gt; 태그 - 동아시아 글자 표시하기
 
+주로 동아시아 국가들의 글자들에 주석을 함께 표기하기 위한 용도로 사용된다.
+
+주석으로 표시할 내용을 &lt;ruby&gt; 태그 안에 &lt;rt&gt; 태그로 표시한다.
+
+```php
+<ruby> 일본어 글자 <rt> 그 글자의 발음 </rt> </ruby>
+```
+
 ### 기타 텍스트 관련 태그들
+
+#### &lt;abbr&gt;
+
+약자 표시. title 속성을 함께 사용할 수 있다.
+
+```php
+<p><b><abbr title="Internet of Things">IoT</abbr></b>란 각종 사물에 센서와 통신 기능을 내장해 인터넷에 연결하는 기술을 의미한다.</p>
+```
+
+#### &lt;cite&gt;
+
+웹 문서나 포스트에서 참고 내용 표시
+
+```php
+<p>내가 경험한 가장 흥미진진한 일은 누군가를 만나는 일이다 - 영화, <cite>'비포선셋'</cite> 중
+```
+
+#### &lt;code&gt;
+
+```php
+<pre><code> function savetheLocal(){...}</code></pre>
+```
+
+#### &lt;kbd&gt;
+
+```php
+
+```
+
+#### &lt;small&gt;
+
+```php
+
+```
+
+#### &lt;sub&gt;
+
+```php
+
+```
+
+#### &lt;sup&gt;
+
+```php
+
+```
+
+#### &lt;s&gt;
+
+```php
+
+```
+
+#### &lt;u&gt;
+
+```php
+
+```
 
 
 
