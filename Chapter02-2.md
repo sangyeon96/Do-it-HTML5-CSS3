@@ -52,8 +52,10 @@
 
 ### &lt;span&gt; 태그 - 줄바꿈 없이 영역 묶기
 
+Inline Text Container.
+
 ```php
-<span style="color:blue;">텍스트 단락에서 일부 글자만 파란색으로 바꿀 텍스트</span>
+<span style="color:blue;">텍스트 단락에서 일부 글자만 서식(여기선 파란색)을 바꿀 텍스트</span>
 ```
 
 ### &lt;ruby&gt; 태그 - 동아시아 글자 표시하기
@@ -69,6 +71,8 @@
 ### 기타 텍스트 관련 태그들
 
 #### &lt;abbr&gt;
+
+abbreviation.
 
 약자 표시. title 속성을 함께 사용할 수 있다.
 
@@ -94,7 +98,9 @@
 
 #### &lt;kbd&gt;
 
-키보드 입력이나 음성 명령 같은 사용자 입력 내용&lt;
+keyboard text.
+
+키보드 입력이나 음성 명령 같은 사용자 입력 내용
 
 ```php
 <p>웹 화면을 다시 불러오려면 <kbd>F5</kbd>키를 누릅니다</p>
@@ -102,7 +108,7 @@
 
 #### &lt;small&gt;
 
-부가 정보처럼 작게 표시해도 되는 텍스트&lt;
+부가 정보처럼 작게 표시해도 되는 텍스트
 
 ```php
 <p>가격 : 13,000원 <small>(부가세 별도)</small></p>
@@ -110,7 +116,7 @@
 
 #### &lt;sub&gt;
 
-아래 첨자
+subscript. 아래 첨자
 
 ```php
 <p>물의 화학식은 <b>H<sub>2</sub>0</b>다</p>
@@ -118,7 +124,7 @@
 
 #### &lt;sup&gt;
 
-위 첨자
+superscript. 위 첨자
 
 ```php
 <p>E = mc<sup>2</sup></p>
@@ -126,7 +132,7 @@
 
 #### &lt;s&gt;
 
-취소선
+strikethrough. 취소선
 
 ```php
 <p><s>34,000원</s><strong>19,000원</strong></p>
@@ -134,7 +140,7 @@
 
 #### &lt;u&gt;
 
-밑줄
+underline. 밑줄
 
 ```php
 <p>링크 표시 용도가 아니라 단순히 밑줄을 긋는다면 <u>u 태그</u></p>
