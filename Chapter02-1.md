@@ -3,12 +3,12 @@
 ### &lt;hn&gt; 태그 - 제목 표시하기
 
 ```php
-<h1>heading1</h1>
-<h2>heading2</h2>
-<h3>heading3</h3>
-<h4>heading4</h4>
-<h5>heading5</h5>
-<h6>heading6</h6>
+<h1>header1</h1>
+<h2>header2</h2>
+<h3>header3</h3>
+<h4>header4</h4>
+<h5>header5</h5>
+<h6>header6</h6>
 ```
 
 ### &lt;p&gt; 태그 - 단락 만들기
@@ -19,9 +19,13 @@
 
 ### &lt;br&gt; 태그 - 줄 바꾸기
 
+line break.
+
 닫는 태그가 없다.
 
 ### &lt;hr&gt; 태그 - 분위기 전환을 위한 수평 줄 넣기
+
+horizontal rule.
 
 보통 텍스트 단락의 주제가 바뀔 때 분위기 전환용으로 사용한다.
 
@@ -43,6 +47,8 @@
 ```
 
 ### &lt;pre&gt; 태그 - 입력하는 그대로 화면에 표시하기
+
+preformatted text.
 
 소스에 표시한 공백이 브라우저에 그대로 표시된다.
 
