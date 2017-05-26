@@ -42,16 +42,24 @@
 ### &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; 태그 - 설명 목록 만들기
 
 ```php
-<!-- definition list -->
+<!-- description list -->
 <dl>
-    <!-- definition-list term -->
+    <!-- description-list term -->
     <dt>제목</dt>
-    <!-- definition-list definition -->
+    <!-- description-list description -->
     <dd>설명</dd>
 </dl>
 ```
 
+하나의 &lt;dt&gt; 태그에 여러 개의 &lt;dd&gt; 태그 값을 가질 수도 있고, 여러 개의 &lt;dt&gt; 태그를 가질 수도 있다.
+
+예를 들어 '단어/정의' 목록이나 '질문/답' 목록에서 사용할 수 있다.
+
 HTML 약어 해설을 찾아보다가 흥미로운 사실을 발견하였다. \(출처 : [http://html5doctor.com/the-dl-element/\)](http://html5doctor.com/the-dl-element/)
 
 HTML4에서는 &lt;dl&gt; 태그가 "definition list"로 여겨졌는데, HTML5에서는 "description list"로 변경되었다.
+
+그 이유는 '단어/정의' 목록 뿐만 아니라 '질문/답' 목록 같이 &lt;dt&gt; 태그가 여러 개 이거나, &lt;dd&gt; 태그가 여러 개 일 수 있어서
+
+definition보다는 description이 좀 더 맞는 표현인 것 같다고 생각되어서인 것 같다.\(추측\)
 
