@@ -41,5 +41,17 @@
 
 ### &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; 태그 - 설명 목록 만들기
 
+```php
+<!-- definition list -->
+<dl>
+    <!-- definition-list term -->
+    <dt>제목</dt>
+    <!-- definition-list definition -->
+    <dd>설명</dd>
+</dl>
+```
 
+HTML 약어 해설을 찾아보다가 흥미로운 사실을 발견하였다. \(출처 : [http://html5doctor.com/the-dl-element/\)](http://html5doctor.com/the-dl-element/)
+
+HTML4에서는 &lt;dl&gt; 태그가 "definition list"로 여겨졌는데, HTML5에서는 "description list"로 변경되었다.
 
