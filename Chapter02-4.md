@@ -134,6 +134,20 @@ figure와 caption의 합성어.
 
 ### &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; 태그 - 표 구조 정의하기
 
+```php
+<!-- table head -->
+<thead>
+</thead>
+<!-- table body -->
+<tbody>
+</tbody>
+<!-- table foot -->
+<tfoot>
+</tfoot>
+```
+
+표의 본문이 길어 한 화면을 넘어갈 경우, 자바스크립트를 이용해 제목 부분\(&lt;thead&gt;\)과 요약부분\(&lt;tfoot&gt;\)은 표의 위아래에 고정하고 본문\(&lt;tbody&gt;\)만 스크롤되도록 만들 수 있다.
+
 ### &lt;col&gt;, &lt;colgroup&gt; 태그 - 여러 열 묶어 스타일 지정하기
 
 
