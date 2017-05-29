@@ -76,6 +76,62 @@ _1행_ 1열과 _2행_ 1열을 합칠 때 - 행을 합치므로 rowspan
 
 ### &lt;caption&gt; 태그, &lt;figcaption&gt; 태그 - 표에 제목 붙이기
 
+|  | &lt;caption&gt; 태그 | &lt;figcaption&gt; 태그 |
+| :--- | :--- | :--- |
+| 의미 | caption | figure + caption |
+| 위치 | 위쪽 중앙 | 표 위 아래 둘 다 가능 |
+
+#### &lt;caption&gt; 태그 사용하기
+
+&lt;caption&gt; 안에는 다른 태그를 사용해 제목을 여러 줄로 표시하거나 텍스트를 꾸밀 수도 있다.
+
+```php
+<table border="1">
+    <caption>
+        <strong>표 제목</strong>
+        <p>표 제목 설명</p>
+    </caption>
+    <tr>
+        <th></th>
+        <td></td>
+    </tr>
+</table>
+```
+
+#### &lt;figcaption&gt; 태그 사용하기
+
+figure와 caption의 합성어.
+
+설명 글을 붙이고 싶은 대상을 &lt;figure&gt; 태그로 감싼 후 &lt;figcaption&gt; 태그를 이용해 제목이나 설명 글을 입력한다.
+
+&lt;caption&gt; 태그와 달리 중앙에 정렬되지 않는다. 또한 &lt;caption&gt; 태그를 사용하면 제목이 위쪽 중앙에 표시되는 반면, &lt;figcaption&gt; 태그를 &lt;table&gt; 태그보다 앞에 사용하면 표 위에 제목이 표시되고 &lt;/table&gt; 태그 다음에 추가하면 표 아래에 제목이 표시된다.
+
+```php
+<figure>
+    <table border="1">
+        <tr>
+            <th></th>
+            <td></td>
+        </tr>
+    </table>
+    <figcaption>
+        <p>[표1-1]표 설명<b>표 제목</b></p>
+    </figcaption>
+</figure>
+```
+
+#### aria-describedby 속성 - 표에 대한 설명 제공하기
+
+화면 낭독기에서 표를 읽어줄 때 도움이 되도록 표 설명을 별도의 문장으로 작성한 후 &lt;table&gt; 태그 안에 aria-describedby 속성을 추가해 연결하면 표를 이해하는 데 도움이 된다.
+
+```php
+<p id="summary">표 설명</p>
+    <table border="1" aria-describedby="summary">
+        <caption>표 제목</caption>
+        <tr></tr>
+    </table>
+```
+
 ### &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; 태그 - 표 구조 정의하기
 
 ### &lt;col&gt;, &lt;colgroup&gt; 태그 - 여러 열 묶어 스타일 지정하기
