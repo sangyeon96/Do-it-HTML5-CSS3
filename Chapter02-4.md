@@ -8,8 +8,6 @@
 
 ### &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt; 태그 - 기본적인 표 만들기
 
-th table heading
-
 #### 기본적인 표 만들기
 
 1. &lt;table&gt; 태그를 이용해 표 전체 윤곽을 잡는다.
@@ -37,6 +35,7 @@ th table heading
 
 ```php
 <table border="1"> <!-- 표에 테두리 표시 -->
+    <!-- table row -->
     <tr>
         <!-- table heading -->
         <th>제목 셀(1행 1열)</th>
@@ -122,7 +121,7 @@ figure와 caption의 합성어.
 
 #### aria-describedby 속성 - 표에 대한 설명 제공하기
 
-화면 낭독기에서 표를 읽어줄 때 도움이 되도록 표 설명을 별도의 문장으로 작성한 후 &lt;table&gt; 태그 안에 aria-describedby 속성을 추가해 연결하면 표를 이해하는 데 도움이 된다.
+화면 낭독기에서 표를 읽어줄 때 도움이 되도록 **표 설명을 별도의 문장으로 작성**한 후 &lt;table&gt; 태그 안에 aria-describedby 속성을 추가해 연결하면 표를 이해하는 데 도움이 된다.
 
 ```php
 <p id="summary">표 설명</p>
@@ -150,5 +149,7 @@ figure와 caption의 합성어.
 
 ### &lt;col&gt;, &lt;colgroup&gt; 태그 - 여러 열 묶어 스타일 지정하기
 
+**&lt;col&gt; 태그**는 한 열에 있는 **모든 셀에 같은 스타일을 적용**하려고 할 때 사용하는 것으로 닫는 태그가 없다.
 
+**&lt;colgroup&gt; 태그**는 &lt;col&gt; 태그에서 span속성을 이용해 열을 묶는 것 처럼, &lt;colgroup&gt; 태그 안에 묶는 열의 개수만큼 &lt;col&gt; 태그를 넣음으로써 **여러 열을 묶어 스타일을 적용**할 수 있다.
 
