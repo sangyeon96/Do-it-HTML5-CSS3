@@ -64,7 +64,7 @@ HTML5에는 새로운 유형들이 많이 추가되었으나 브라우저에 따
 <input type="url" 속성="속성값">
 ```
 
-type="url"을 사용했을 때 이 필드에는 반드시 'http://'로 시작하는 사이트 주소를 입력해야 한다.
+type="url"을 사용했을 때 이 필드에는 반드시 '[http://'로](http://'로) 시작하는 사이트 주소를 입력해야 한다.
 
 #### type="email" - 메일 주소 입력란 만들기
 
@@ -118,17 +118,77 @@ radio는 라디오 버튼\(동그라미\), checkbox는 체크박스\(네모\)
 
 ### type="color" - 색상 선택 상자 표시하기
 
+색상 값은 **16진수**로 표시한다.
+
+```php
+<label>선호 색상 <input type="color" value="#00ff00"></label> <!-- 여기서 value는 초록색 -->
+```
+
 ### type="date", type="month", type="week" - 날짜 표시하기
+
+```php
+<!-- yyyy-mm-dd -->
+<input type="date">
+<!-- yyyy-mm -->
+<input type="month">
+<!-- yyyy-W몇번째 -->
+<input type="week">
+```
 
 ### type="time", type="datetime", type="datetime-local" - 시간 지정하기
 
+```php
+<input type="time">
+<input type="datetime">
+<input type="datetime-local">
+```
+
+#### 날짜나 시간과 관련된 유형을 지정할 때 공통으로 사용하는 속성
+
+1. **min** - 날짜나 시간의 최솟값을 지정한다.
+2. **max** - 날짜나 시간의 최댓값을 지정한다.
+3. **step** - 스핀 박스의 화살표를 누를 때마다 날짜나 시간을 얼마나 조절할지를 지정한다.
+4. **value** - 화면에 표시할 초기값을 지정한다.
+
 ### type="submit", type="reset" - 서버 전송, 리셋 버튼 넣기
+
+리셋\(reset\) 버튼은 &lt;input&gt; 요소에 입력된 모든 정보를 재설정해 사용자가 입력한 내용을 모두 지울 수 있다.
+
+submit 버튼으로 전송된 정보는 처음에 &lt;form&gt; 태그에서 지정한 폼 처리 프로그램에 넘겨진다.
+
+```php
+<form action="register.php" method="post">
+    <label> 메일 주소 <input type="text"></label>
+    <input type="submit" value="제출">
+    <input type="reset" value="다시입력">
+</form>
+```
 
 ### type="image" - 이미지 버튼 넣기
 
+단순히 이미지 버튼을 넣는 것이 아니라 type="submit"의 기능도 포함되어 있다. submit 버튼 대신 전송 이미지를 넣은 것이다.
+
+```php
+<input type="image" id="butt" src="images/login.jpg" alt="login">
+```
+
 ### type="button" - 버튼 넣기
 
+폼 안에 버튼 형태를 만든다. 이 버튼은 submit이나 reset 같은 자체 기능이 없고 오직 버튼만 넣기 때문에 스크립트 함수 등을 연결해 사용한다.
+
+value 속성을 사용해 버튼에 표시할 내용을 지정한다.
+
+```php
+<input type="button" value="버튼 기능" onclick="function()">
+```
+
 ### type="file" - 파일 첨부하기
+
+type="file" 필드를 넣으면 웹 브라우저 화면에 \[파일 선택\]이나 \[찾아보기\]등이 표시되는데 이 버튼을 클릭한 후 파일을 선택하면 파일이 첨부된다.
+
+```php
+<label> 첨부파일 <input type="file"></label>
+```
 
 
 
