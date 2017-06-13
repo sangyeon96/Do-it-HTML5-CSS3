@@ -17,8 +17,8 @@
 * [03-3 SVG 이미지](Chapter03-3.md)
 * [04\_폼 관련 태그들](Chapter04.md)
 * [04-1 폼 만들기](Chapter04-1.md)
-* [04-2 사용자 입력을 위한 &lt;/input&gt; 태그](Chapter04-2.md)
-* [04-3 &lt;/input&gt; 태그의 다양한 속성](Chapter04-3.md)
+* [04-2 사용자 입력을 위한 &\#60;input&\#62; 태그](Chapter04-2.md)
+* [04-3 &\#60;input&\#62; 태그의 다양한 속성](Chapter04-3.md)
 * [04-4 여러 데이터 나열해 보여 주기](Chapter04-4.md)
 * [04-5 기타 다양한 폼 요소들](Chapter04-5.md)
 
