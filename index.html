@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>온라인 프로필</title>
+        <meta charset="utf-8">
+        <!-- 표에 스타일 적용 -->
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding:15px; /* 표와 내용사이의 여백을 위해 */
+            }
+            a {
+                color:blue;
+            }
+            progress {
+                background-color: #0080FF;
+                border: 0;
+                height: 18px;
+                border-radius: 9px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sangyeon</h1>
+        <p>이메일 : arsene96@naver.com</p>
+        <!-- 이미지 태그 이용 -->
+        <figure>
+            <img src="images/Profile.jpg" alt="블로그 프로필 이미지">
+            <figcaption>[그림 1-1] 블로그 프로필 이미지</figcaption>
+        </figure>
+        
+        <!-- menu -->
+        <h2>Menu</h2>
+        <ul id="menu">
+            <li><a href="#introduction">Who I am?</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#academic">Academic</a></li>
+            <li><a href="#schedule">HTML Learning Schedule</a></li>
+        </ul>
+
+        <!-- Who I am? -->
+        <h2 id=introduction>Who I am?</h2>
+        <figure>
+            <figcaption>[표 1-1] Introduction</figcaption>
+            <table>
+                <colgroup>
+                    <col style="background-color: skyblue;">
+                    <col>
+                    <col style="background-color: skyblue;">
+                    <col>
+                </colgroup>
+                <tr>
+                    <th>이름</th>
+                    <td>Sangyeon</td>
+                    <th>연락처</th>
+                    <td>010-xxxx-xxxx</td>
+                </tr>
+                <tr>
+                    <th>주소</th>
+                    <td colspan="3">경기도 xx시 xx구</td>
+                </tr>
+                <tr>
+                    <th>자기소개</th>
+                    <td colspan="3">I'm majoring in Computer Science Engineering.<br>I'm learning HTML5:)</td>
+                </tr>
+                <tr>
+                    <th>SNS</th>
+                    <td colspan="3"><a href="https://www.instagram.com/sangyeon217" target="_blank">instagram</a></td>
+                </tr>
+            </table>
+        </figure>
+        <p><a href="#menu">[메뉴로]</a></p>
+        <!-- Skills -->
+        <!-- List 태그 이용 -->
+        <h2 id="skills">Skills</h2>
+        <ul>
+            <li>사용 언어
+                <ul>
+                    <li>C</li>
+                    <li>JAVA</li>
+                    <li>PYTHON</li>
+                    <li><mark>HTML</mark></li>
+                    <li><mark>CSS</mark></li>
+                </ul>
+            </li>
+            <li>사용 툴
+                <ol type="i">
+                    <li><b>Visual Studio</b></li>
+                    <li>Eclipse</li>
+                    <li>Intellij</li>
+                </ol>
+        </ul>
+        <p><a href="#menu">[메뉴로]</a></p>
+        <!-- Academic -->
+        <!-- Table 태그 이용 -->
+        <h2 id="academic">Academic</h2>
+        <p id="summary">Sangyeon의 학력 사항입니다</p>
+        <table aria-describedby="summary">
+            <caption>[표 1-2] 학력 사항</caption>
+            <thead>
+                <tr style="background-color: skyblue;">
+                    <th>출신학교</th>
+                    <th>전공</th>
+                    <th>기간</th>
+                    <th>졸업구분</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>S 고등학교</td>
+                    <td>(해당사항 없음)</td>
+                    <td>2011.3 ~ 2014.2</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>K 대학교</td>
+                    <td>컴퓨터공학과</td>
+                    <td>2015.3 ~ </td>
+                    <td>재학 중</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+        <p><a href="#menu">[메뉴로]</a></p>
+        <hr>
+        <!-- HTML Learning Schedule -->
+        <h2 id="schedule"><mark>HTML</mark> Learning Schedule</h2>
+        <p>I'm learning HTML <a href="http://cafe.naver.com/doitstudyroom" target="_blank">Here</a></p>
+        <label>진행률</label>
+        <progress max=“53” value=“16”></progress>
+        <figure>
+            <table>
+                <thead>
+                    <tr style="background-color: skyblue;">
+                        <th>날짜(date)</th>
+                        <th>진도</th>
+                        <th>내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1일차(20170522)</td>
+                        <td>Chapter01-1,2</td>
+                        <td>HTML과의 첫 만남 </td>
+                    </tr>
+                    <tr>
+                        <td>2일차(20170524)</td>
+                        <td>Chapter01-3,4</td>
+                        <td>HTML 기본 태그들과 직접 웹 서버에 업로드하는 방법</td>
+                    </tr>
+                    <tr>
+                        <td>3일차(20170525)</td>
+                        <td>Chapter02-1,2</td>
+                        <td>텍스트 관련 block속성과 inline속성 태그들</td>
+                    </tr>
+                    <tr>
+                        <td>4일차(20170526)</td>
+                        <td>Chapter02-3</td>
+                        <td>텍스트 관련 목록 태그들</td>
+                    </tr>
+                    <tr>
+                        <td>5일차(20170529)</td>
+                        <td>Chapter02-4</td>
+                        <td>텍스트 관련 표 태그들</td>
+                    </tr>
+                    <tr>
+                        <td>6일차(20170530)</td>
+                        <td>Chapter03-1,2</td>
+                        <td>이미지와 하이퍼링크</td>
+                    </tr>
+                    <tr>
+                        <td>7일차(20170531)</td>
+                        <td>Chapter03-3</td>
+                        <td>SVG 이미지</td>
+                    </tr>
+                    <tr>
+                        <td>8일차(20170612)</td>
+                        <td>Chapter04-1,2</td>
+                        <td>form태그와 input태그 관련</td>
+                    </tr>
+                    <tr>
+                        <td>9일차(20170616)</td>
+                        <td>Chapter04-3,4,5</td>
+                        <td>input태그 관련 속성들과 드롭다운 목록 태그들, 그 외 다양한 폼 요소들</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr style="background-color: skyblue;">
+                        <td colspan="3">현재까지 나간 진도입니다.(2017-06-16)</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <figcaption>[표1-3] HTML진도표</figcaption>
+        </figure>
+        <p><a href="#menu">[메뉴로]</a></p>
+    </body>
+</html>
