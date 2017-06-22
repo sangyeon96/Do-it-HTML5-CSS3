@@ -52,8 +52,8 @@ CSS에서 각도는 맨 윗부분이 0deg이고 시계 방향으로 회전하면
 ```css
 .grad{
     background: #0000ff; /* css3 미지원 브라우저 */
-    background: -webkit-linear-gradient(45deg, #0000ff, #ffffff); /* 초기 사파리용(끝부분 각도, 시작 색상, 끝 색상) */
-    background: -moz-linear-gradient(45deg, #0000ff, #ffffff); /* 초기 파이어폭스용(끝부분 각도, 시작 색상, 끝 색상) */
+    background-image: -webkit-linear-gradient(45deg, #0000ff, #ffffff); /* 초기 사파리용(끝부분 각도, 시작 색상, 끝 색상) */
+    background-image: -moz-linear-gradient(45deg, #0000ff, #ffffff); /* 초기 파이어폭스용(끝부분 각도, 시작 색상, 끝 색상) */
     background: -o-linear-gradient(45deg, #0000ff, #ffffff); /* 초기 오페라용(끝부분 각도, 시작 색상, 끝 색상) */
     background: linear-gradient(45deg, #0000ff, #ffffff); /* 표준 구문(끝부분 각도, 시작 색상, 끝 색상) */
 }
@@ -65,17 +65,115 @@ CSS에서 각도는 맨 윗부분이 0deg이고 시계 방향으로 회전하면
 
 ```css
 .grad{
-    background: #0000ff; /* css3 미지원 브라우저 */
-    background: -webkit-linear-gradient(45deg, #0000ff, #ffffff); /* 초기 사파리용(끝부분 각도, 시작 색상, 끝 색상) */
-    background: -moz-linear-gradient(45deg, #0000ff, #ffffff); /* 초기 파이어폭스용(끝부분 각도, 시작 색상, 끝 색상) */
-    background: -o-linear-gradient(45deg, #0000ff, #ffffff); /* 초기 오페라용(끝부분 각도, 시작 색상, 끝 색상) */
-    background: linear-gradient(45deg, #0000ff, #ffffff); /* 표준 구문(끝부분 각도, 시작 색상, 끝 색상) */
+    background: #06f; /* css3 미지원 브라우저 */
+    background: -webkit-linear-gradient(top, #06f, white 30%, #06f); /* 초기 사파리용(시작 색상, 중지 점 색상과 위치, 끝 색상) */
+    background: -moz-linear-gradient(bottom, #06f, white 30%, #06f); /* 초기 파이어폭스용(시작 색상, 중지 점 색상과 위치, 끝 색상) */
+    background: -o-linear-gradient(bottom, #06f, white 30%, #06f); /* 초기 오페라용(시작 색상, 중지 점 색상과 위치, 끝 색상) */
+    background: linear-gradient(to bottom, #06f, white 30%, #06f); /* 표준 구문(시작 색상, 중지 점 색상과 위치, 끝 색상) */
 }
 ```
 
 ### 원형 그러데이션
 
+```css
+radial-gradient(최종모양 크기 at 위치, color-stop, [color-stop,...])
+```
+
+#### 모양
+
+원형 그러데이션에서 만들어지는 모양은 circle\(원형\)과 eclipse\(타원형\)이다. 따로 지정하지 않으면 eclipse로 인식한다.
+
+```css
+.grad{
+    background: red; /* css3 미지원 브라우저 */
+    background: -webkit-radial-gradient(circle, white, yellow, red); /* 초기 사파리용 */
+    background: -moz-radial-gradient(circle, white, yellow, red); /* 초기 파이어폭스용 */
+    background: -o-radial-gradient(circle, white, yellow, red); /* 초기 오페라용 */
+    background: radial-gradient(circle, white, yellow, red); /* 표준 구문 */
+}
+```
+
+#### 위치
+
+**표준 구문**에서는 '모양'과 '크기'속성 다음에 **at키워드와 함께** 위치 값을 지정하는데 **브라우저 접두사**를 붙이는 구문에서는 **at키워드 없이** 구문의 맨 앞부분에 위치를 표시한다. 생략하면 가로와 세로 모두 중앙인 center로 인식한다.
+
+```css
+.grad{
+    background: blue; /* css3 미지원 브라우저 */
+    background: -webkit-radial-gradient(10% 10%, circle, white, blue); /* 초기 사파리용 */
+    background: -moz-radial-gradient(10% 10%, circle, white, blue); /* 초기 파이어폭스용 */
+    background: -o-radial-gradient(10% 10%, circle, white, blue); /* 초기 오페라용 */
+    background: radial-gradient(circle at 10% 10%, circle, white, blue); /* 표준 구문 */
+}
+```
+
+#### 크기
+
+원의 모양을 나타내는 키워드 값\(circle or eclipse\)과 크기를 나타내는 키워드 값을 함께 쓰면 된다.
+
+##### 크기를 나타내는 키워드 값
+
+* closest-side\(가장 가까운 모서리\) : 가장 가까운 모서리에 그러데이션 가장자리가 닿을 때까지 그러데이션을 그린다.
+* closest-corner\(가장 가까운 코너\) : 그러데이션 가장자리가 그러데이션 중심에서 가장 가까운 요소의 코너에 닿도록 한다.
+* farthest-side\(가장 먼 모서리\) : 그러데이션 가장자리가 그러데이션 중심에서 가장 먼 모서리와 만나거나 타원의 경우, 그러데이션 가장자리가 그러데이션 중심에서 가장 먼 모서리와 만나도록 한다.
+* farthest-corner\(가장 먼 코너\) : 그러데이션 가장자리가 그러데이션 중심에서 가장 먼 코너에 닿도록 한다. 기본 값.
+
+```css
+.grad{
+    background: darkgreen; /* css3 미지원 브라우저 */
+    background: -webkit-radial-gradient(30% 40%, circle closest-side, white, yellow, green); /* 초기 사파리용 */
+    background: -moz-radial-gradient(30% 40%, circle closest-side, white, yellow, green); /* 초기 파이어폭스용 */
+    background: -o-radial-gradient(30% 40%, circle closest-side, white, yellow, green); /* 초기 오페라용 */
+    background: radial-gradient(circle closest-side at 30% 40%, white, yellow, green); /* 표준 구문 */
+}
+```
+
+#### 색상 중지 점\(color-stop\)
+
+선형 그러데이션처럼 원형 그러데이션에서 색상이 바뀌는 부분을 색상 중지 점\(color-stop\)이라고 하는데 그러데이션 색상뿐만 아니라 색상이 바뀌는 위치도 함께 지정할 수 있다.
+
+```css
+.grad{
+    background: skyblue; /* css3 미지원 브라우저 */
+    background: -webkit-radial-gradient(red, yellow 20%, skyblue); /* 초기 사파리용 */
+    background: -moz-radial-gradient(red, yellow 20%, skyblue); /* 초기 파이어폭스용 */
+    background: -o-radial-gradient(red, yellow 20%, skyblue); /* 초기 오페라용 */
+    background: radial-gradient(red, yellow 20%, skyblue); /* 표준 구문 */
+}
+```
+
 ### 그러데이션 반복
+
+선형 그러데이션을 반복할 때는 **repeating-linear-gradient**,
+
+원형 그러데이션의 반복은 **repeating-radial-gradient**를 사용한다.
+
+```css
+.grad1{
+    background: red; /* css3 미지원 브라우저 */
+    background: -webkit-repeating-linear-gradient(yellow, red 20px); /* 초기 사파리용 */
+    background: -moz-repeating-linear-gradient(yellow, red 20px); /* 초기 파이어폭스용 */
+    background: -o-repeating-linear-gradient(yellow, red 20px); /* 초기 오페라용 */
+    background: repeating-linear-gradient(yellow, red 20px); /* 표준 구문 */
+}
+
+/* 시작 색상과 끝 색상을 명확히 구분해 주면 색상이 중간에 섞이지 않고 두 개 이상의 색상을 반복적으로 표시할 수 있다. */
+.grad2{
+    background: red; /* css3 미지원 브라우저 */
+    background: -webkit-repeating-linear-gradient(yellow, yello 20px, red 20px, red 40px); /* 초기 사파리용 */
+    background: -moz-repeating-linear-gradient(yellow, yello 20px, red 20px, red 40px); /* 초기 파이어폭스용 */
+    background: -o-repeating-linear-gradient(yellow, yello 20px, red 20px, red 40px); /* 초기 오페라용 */
+    background: repeating-linear-gradient(yellow, yello 20px, red 20px, red 40px); /* 표준 구문 */
+}
+
+/* 원형 그러데이션의 경우 */
+.grad3{
+    background: repeating-radial-gradient(circle, white, #ccc 10%);
+}
+.grad4{
+    background: repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+}
+```
 
 
 
