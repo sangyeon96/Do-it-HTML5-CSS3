@@ -2,6 +2,8 @@
 
 ### border-style 속성 - 테두리 스타일 지정하기
 
+#### 속성 값
+
 * **none** : 테두리가 나타나지 않는다. 기본 값.
 * **hidden** : 테두리가 나타나지 않는다. border-collapse:collapse일 경우, 다른 테두리도 표시되지 않는다.
 * **dashed** : 테두리를 짧은 선\(직선으로 된 점선\)으로 표시한다.
@@ -30,11 +32,13 @@
 
 ### border-color 속성 - 테두리 색상 지정하기
 
-* border-top-color
-* border-right-color
-* border-bottom-color
-* border-left-color
-* border-color
+```css
+border-top-color:blue;
+border-right-color:blue;
+border-bottom-color:blue;
+border-left-color:blue;
+border-color:blue;
+```
 
 ### border 속성 - 테두리 스타일 묶어 지정하기
 

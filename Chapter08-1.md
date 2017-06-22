@@ -32,7 +32,7 @@ ex\) &lt;img&gt;, &lt;object&gt;, &lt;br&gt;, &lt;sub&gt;, &lt;sup&gt;, &lt;span
 
 width 속성은 콘텐츠 영역의 너비, height 속성은 콘텐츠 영역의 높이를 결정한다.
 
-#### 속성 값 종류
+#### 속성 값
 
 * **크기**\(px이나 cm\)
 * **백분율**\(%\)
