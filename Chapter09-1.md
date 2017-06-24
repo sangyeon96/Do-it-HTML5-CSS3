@@ -15,20 +15,20 @@ CSS를 이용해 꾸미고 CSS 포지셔닝을 이용해 검색 창, 로그인 �
 
 ```css
 .box1 { /* 콘텐츠 영역 너비 width 300 + padding 30*2 + border 2*2 = 364px가 실제 화면에서 차지하는 너비 */
-	box-sizing:content-box;
-	width: 300px;
-	height: 150px;
-	margin: 10px;
-	padding: 30px;
-	border:2px solid red;
+    box-sizing:content-box;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 30px;
+    border:2px solid red;
 }
 .box2 { /* 화면에서 차지하는 너비는 width 300px, 콘텐츠 영역 너비는 width 300 - padding 30*2 - border 2*2 = 236px */
-	box-sizing:border-box;
-	width: 300px;
-	height: 150px;
-	margin: 10px;
-	padding: 30px;
-	border: 2px solid red;
+    box-sizing:border-box;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid red;
 }
 ```
 
@@ -61,14 +61,30 @@ position 속성을 이용하면 텍스트나 이미지를 나란히 배치할 �
 
 #### 속성 값
 
-* static : 요소를 문서의 흐름에 맞추어 배치한다.
-* relative : 이전 요소에 자연스럽게 연결해 배치하되 위치를 지정할 수 있다.
-* absolute : 원하는 위치를 지정해 배치한다.
-* fixed : 지정한 위치에 고정해 배치한다. 화면에서 요소가 잘릴 수도 있다.
+* **static** : 요소를 문서의 흐름에 맞추어 배치한다.
+* **relative** : 이전 요소에 자연스럽게 연결해 배치하되 위치를 지정할 수 있다.
+* **absolute** : 원하는 위치를 지정해 배치한다.
+* **fixed** : 브라우저 창 기준으로 지정한 위치에 고정해 배치한다. 화면에서 요소가 잘릴 수도 있다.
+
+위치는 top과 bottom, left와 right로 얼마나 떨어져 있는지를 지정한다.
 
 ### visibility 속성 - 요소를 보이게 하거나 보이지 않게 하기
 
+* **visible** : 기본 값
+* **hidden** : 화면에서 요소를 감추되, 크기는 그대로 유지하기 때문에 배치에 영향을 미친다.
+* **collapse** : 서로 겹치도록 조절한다.
+
 ### z-index 속성 - 요소 쌓는 순서 정하기
+
+```css
+div#wrapper{
+    position:relative;
+}
+.b1{z-index:1}
+.b2{z-index:3}
+.b3{z-index:1}
+/* b1 -> b3 -> b2순으로 요소를 쌓는다. */
+```
 
 
 
