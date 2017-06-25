@@ -65,9 +65,24 @@
 
 ### text-align 속성 - 셀 안에서 수평 정렬하기
 
+#### 속성 값
 
+* left
+* right
+* center
 
 ### vertical-align 속성 - 셀 안에서 수직 정렬하기
+
+* **baseline**
+* sub
+* super
+* **top**
+* **middle**
+* **bottom**
+* text-top
+* text-bottom
+* 길이 값\(px\)
+* 백분율 값\(%\)
 
 
 
