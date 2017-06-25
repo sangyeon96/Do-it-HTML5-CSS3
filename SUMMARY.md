@@ -43,7 +43,6 @@
 * [09-1 CSS 포지셔닝과 주요 속성들](Chapter09-1.md)
 * [09-2 다단으로 편집하기](Chapter09-2.md)
 * [09-3 표 스타일](Chapter09-3.md)
-* [15\_반응형 웹 사이트 만들기](15bc18-c751-d615-c6f9-c0ac-c774-d2b8-b9cc-b4e4-ae30.md)
 * [10\_HTML5와 시맨틱 태그](10html5-c640-c2dc-b9e8-d2f1-d0dc-adf8.md)
 * [10-1 HTML4 문서 vs HTML5 문서](10-1-html4-bb38-c11c-vs-html5-bb38-c11c.md)
 * [10-2 문서 구조를 위한 HTML5 시맨틱 태그](10-2-bb38-c11c-ad6c-c870-b97c-c704-d55c-html5-c2dc-b9e8-d2f1-d0dc-adf8.md)
@@ -67,4 +66,7 @@
 * [14-4 미디어 쿼리](14-4-bbf8-b514-c5b4-cffc-b9ac.md)
 * [14-5 미디어 쿼리를 사용해 사이트 구성하기](14-5-bbf8-b514-c5b4-cffc-b9ac-b97c-c0ac-c6a9-d574-c0ac-c774-d2b8-ad6c-c131-d558-ae30.md)
 * [14-6 플렉서블 박스 레이아웃](14-6-d50c-b809-c11c-be14-bc15-c2a4-b808-c774-c544-c6c3.md)
+* [15\_반응형 웹 사이트 만들기](15bc18-c751-d615-c6f9-c0ac-c774-d2b8-b9cc-b4e4-ae30.md)
+* [15-1 레이아웃 구조 만들기](15-1-b808-c774-c544-c6c3-ad6c-c870-b9cc-b4e4-ae30.md)
+* [15-2 각 기기용 레이아웃 만들기](15-2-ac01-ae30-ae30-c6a9-b808-c774-c544-c6c3-b9cc-b4e4-ae30.md)
 
