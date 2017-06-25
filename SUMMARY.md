@@ -43,7 +43,6 @@
 * [09-1 CSS 포지셔닝과 주요 속성들](Chapter09-1.md)
 * [09-2 다단으로 편집하기](Chapter09-2.md)
 * [09-3 표 스타일](Chapter09-3.md)
-* [11\_HTML5와 멀티미디어](11html5-c640-ba40-d2f0-bbf8-b514-c5b4.md)
 * [12\_다재다능한 CSS3 선택자](12b2e4-c7ac-b2e4-b2a5-d55c-css3-c120-d0dd-c790.md)
 * [13\_CSS3와 애니메이션](13css3-c640-c560-b2c8-ba54-c774-c158.md)
 * [14\_반응형 웹이란?](14bc18-c751-d615-c6f9-c774-b7803f.md)
@@ -52,4 +51,7 @@
 * [10-1 HTML4 문서 vs HTML5 문서](10-1-html4-bb38-c11c-vs-html5-bb38-c11c.md)
 * [10-2 문서 구조를 위한 HTML5 시맨틱 태그](10-2-bb38-c11c-ad6c-c870-b97c-c704-d55c-html5-c2dc-b9e8-d2f1-d0dc-adf8.md)
 * [10-3 IE8 이하 버전에서는 어떻게 하나요?](10-3-ie8-c774-d558-bc84-c804-c5d0-c11c-b294-c5b4-b5bb-ac8c-d558-b098-c6943f.md)
+* [11\_HTML5와 멀티미디어](11html5-c640-ba40-d2f0-bbf8-b514-c5b4.md)
+* [11-1 웹과 멀티미디어](11-1-c6f9-acfc-ba40-d2f0-bbf8-b514-c5b4.md)
+* [11-2 오디오 & 비디오 재생하기](11-2-c624-b514-c624-and-be44-b514-c624-c7ac-c0dd-d558-ae30.md)
 
