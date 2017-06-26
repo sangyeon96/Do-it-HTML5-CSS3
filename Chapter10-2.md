@@ -32,11 +32,11 @@
 
 #### 속성
 
-* width
-* height
-* name
-* src
-* seamless
+* **width**
+* **height**
+* **name**
+* **src** : 프레임에 표시할 문서의 주소를 지정한다.
+* **seamless **: 프레임의 테두리를 없애 마치 본문의 일부처럼 보이도록 만들며 속성 값 없이 seamless라고 쓰면 된다. 이 속성은 아직 크롬과 사파리에서만 지원한다.
 
 ```php
 <div class="content">
@@ -57,7 +57,7 @@
     <address>
         <p>제주특별자치도 남제주군 성산읍 수산리 000 번지 요안도라 </p>
         <p>yoan##@naver.com</p>
-    </address>				
+    </address>                
     <p> Copyright ⓒ. All rights reserved.</p>      
 </footer>
 ```
@@ -68,8 +68,8 @@ HTML5에서는 주로 콘텐츠를 묶어 시각적 효과를 적용할 때 즉 
 
 ```css
 #wrapper{
-	width:800px;
-	margin: 0 auto;	
+    width:800px;
+    margin: 0 auto;    
 }
 ```
 
@@ -106,9 +106,9 @@ HTML5에서는 주로 콘텐츠를 묶어 시각적 효과를 적용할 때 즉 
      </article>
   </section>
   <aside>
-  	<img src="images/1.png" alt="">
-  	<img src="images/2.png" alt="">
-  	<img src="images/3.png" alt="">
+      <img src="images/1.png" alt="">
+      <img src="images/2.png" alt="">
+      <img src="images/3.png" alt="">
   </aside>
   <footer>
     <p>Copyright 2012 funnycom</p>
