@@ -2,7 +2,7 @@
 
 ![](/assets/semantic_tag.png)
 
-출처 : [http://www.cellbiol.com/bioinformatics\_web\_development/chapter-3-your-first-web-page-learning-html-and-css/introducing-html5-footer-header-nav-article-section-and-aside-elements/](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/introducing-html5-footer-header-nav-article-section-and-aside-elements/)
+출처 : [http://dickymicky.blog.me/220266897597](http://dickymicky.blog.me/220266897597)
 
 ### **&lt;header&gt;** 태그 - 머리말 지정하기
 
