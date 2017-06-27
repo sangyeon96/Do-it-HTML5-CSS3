@@ -11,10 +11,10 @@
 * **preload** : 재생 버튼을 눌러 재생하기 전에 오디오 파일을 다운로드해 준비해 둔다.
 
 ```php
-/* 플레이어와 함께 재생되는 오디오 */
+<!-- 플레이어와 함께 재생되는 오디오 -->
 <audio src="medias/bgsound.mp3" controls></audio>
 
-/* 플레이어 없이 재생되는 오디오 */
+<!-- 플레이어 없이 재생되는 오디오 -->
 <audio src="medias/bgsound.mp3" autoplay loop></audio>
 ```
 
@@ -47,13 +47,55 @@
     <source src="media/Painting.mp4" type="video/mp4">
     <source src="media/Painting.webm" type="video/webm">
     <source src="media/Painting.ogv" type="video/ogg">
+    <!-- 플래시 무비로 변환한 후 플러그인으로 삽입 -->
     <object data="media/Painting.swf" type="application/x-shockwave-flash"></object>
 </video>
 ```
 
 ### &lt;audio&gt; 태그와 &lt;video&gt; 태그의 속성
 
+1. **width, heigh**t 속성 - 비디오 크기 조절
+2. **controls** 속성 - 컨트롤 막대 표시
+3. **preload** 속성 - 파일 다운로드 여부
+   * none : 사용자가 재생 버튼을 눌러야만 다운로드하기 시작한다.
+   * metadata : 미디어 파일을 즉시 사용하지 않을 것이라고 생각해 미디어 파일 전체를 다운로드하지 않고 메타 정보만 다운로드한다.
+   * auto : 사용자가 즉시 이용할 수 있도록 웹 문서를 로드할 때 미디어 파일도 모두 다운로드한다. 다만, 다운로드가 끝나도 사용자가 재생 버튼을 눌러야만 재생된다. 기본 값.
+4. **muted** 속성 - 소리는 끄고 화면만 재생
+5. **autoplay** 속성 - 자동 재생
+6. **loop** 속성 - 반복 재생
+7. **poster** 속성 - 문제 상황 표시\(포스터 이미지 대신 표시\)
+
+```php
+<video width="400" height="250" controls autoplay muted preload poster="fireworks.jpg">
+    <source src="media/Painting.mp4" type="video/mp4">
+    <source src="media/Painting.webm" type="video/webm">
+    <source src="media/Painting.ogv" type="video/ogg">
+    <track src="media/Painting.vtt" srclang="ko" label="Korean" default>
+</video>
+```
+
 ### **&lt;track&gt;** 태그 - 비디오 화면에 자막 추가하기
+
+#### 속성
+
+1. **kind** 속성 - 자막의 종류를 지정한다.
+   * subtitles : 자막\(비디오 화면 표시o\)
+   * captions : 캡션\(비디오 화면 표시o\)
+   * descriptions : 설명\(비디오 화면 표시x\)
+   * chapters : 장 제목\(비디오 화면 표시x\)
+   * metadata : 콘텐츠 정보\(비디오 화면 표시x\)
+2. **src** 속성 - 자막 텍스트의 파일 경로를 지정한다.
+3. **srclang** 속성 - 사용한 언어를 지정한다.
+4. **label** 속성 - 자막이 여러 개일 경우, 자막을 식별할 수 있도록 제목을 달아 준다.
+5. **default** 속성 - 자막 파일이 여러 개일 경우, 기본으로 사용할 자막을 default로 지정할 수 있다.
+
+```php
+<!-- 기본형 -->
+<track kind="자막 종류" src="경로" srclang="언어" label="제목" default>
+
+<!-- 예시 -->
+<track kind="subtitles" src="Wildlife.vtt" srclang="ko" label="korean" default>
+```
 
 
 

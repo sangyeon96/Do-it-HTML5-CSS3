@@ -25,10 +25,10 @@ ex\) 이제 플래시 플레이어를 차단하고 대부분 HTML5 플레이어�
 * **height**
 
 ```php
-/* 기본형 */
+<!-- 기본형 -->
 <object data="경로" type="유형" name="이름" width="너비" height="높이"></object>
 
-/* 예시 */
+<!-- 예시 -->
 <object data="CalmBay.swf" type="application/x-shockwave-flash" width="450" height="400"></object>
 ```
 
@@ -37,10 +37,10 @@ ex\) 이제 플래시 플레이어를 차단하고 대부분 HTML5 플레이어�
 &lt;object&gt; 태그와 달리 닫는 태그가 없는 &lt;embed&gt; 태그는 주로 &lt;object&gt; 태그를 지원하지 않는 이전 브라우저에서 사용된다.
 
 ```php
-/* 기본형 */
+<!-- 기본형 -->
 <embed src="경로" type="유형" width="너비" height="높이">
 
-/* 예시 */
+<!-- 예시 -->
 <embed src="CalmBay.swf" width="450" height="400">
 ```
 
@@ -60,7 +60,7 @@ ex\) 이제 플래시 플레이어를 차단하고 대부분 HTML5 플레이어�
 
 1. H.264/AVC
 2. v8, v9
-3.  오그 테오라\(Ogg Theora\)
+3. 오그 테오라\(Ogg Theora\)
 
 #### HTML5와 오디오 코덱
 
