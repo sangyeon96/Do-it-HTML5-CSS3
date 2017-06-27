@@ -2,6 +2,8 @@
 
 이 모든 combination selector들이 영어로 설명이 잘 되어있으니 참고하기 : [http://www.corelangs.com/css/basics/ad-selectors.html](http://www.corelangs.com/css/basics/ad-selectors.html)
 
+밑에 코드가 어떻게 생겼는지를 알아두고, 예제파일의 실행결과들을 서로 비교하는게 제일 이해가 잘 된다.
+
 ### **하위 선택자** - 지정한 모든 하위 요소에 스타일 적용하기
 
 descendant selector.
